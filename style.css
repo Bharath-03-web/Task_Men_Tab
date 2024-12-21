@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aquamarine;
+}
+.total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+.totalContent{
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    
+}
+.menuButtons { 
+    display: flex;
+    border: 1px solid #ccc; 
+    background-color: white; 
+    width: 100%;
+} 
+
+.menuButtons button { 
+    border: none; 
+    outline: none; 
+    cursor: pointer; 
+    padding: 14px 16px; 
+    
+} 
+#tab1{
+    width:166px;
+    background-color: #f29999;
+}
+#tab2{
+    width:166px;
+    background-color:rgb(151, 151, 235) ;
+}
+#tab3{
+    width:167px;
+    background-color:rgb(151, 151, 235) ;
+}
+.menuButtons button:hover { 
+    background-color: rgb(236, 62, 91);
+    color: white;
+
+} 
+
+.menuButtons button.active { 
+    background-color: #f29999;
+}
+
+
+.content { 
+    display: none; 
+    padding: 6px 12px; 
+    border-top: none; 
+    }
+

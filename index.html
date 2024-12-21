@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="total">    
+    <div class="totalContent">
+        <div class="menuButtons"> 
+            <div>
+                <button id="tab1" onclick="displaycontent1()">Step-1</button> 
+            </div>
+            <div>
+                <button id="tab2" onclick="displaycontent2()">Step-2</button> 
+            </div>
+            <div>
+                <button id="tab3" onclick="displaycontent3()">Step-3</button> 
+            </div>
+        </div> 
+
+        <div id="Step-1" class="content" style="display: block; background-color: #f29999;"> 
+            <h3>Step-1</h3> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil earum doloremque repudiandae neque quam quod sit eligendi
+                quae temporibus saepe ipsam tempore distinctio totam necessitatibus, debitis illum recusandae corporis suscipit labore 
+                quibusdam enim? Hic amet aliquid iure sapiente, dolor omnis illo assumenda autem corporis repudiandae beatae sunt sed 
+                suscipit iste fugit eveniet reprehenderit blanditiis porro voluptatibus magnam similique facilis perspiciatis saepe. 
+                Error odit modi architecto. Ab!
+
+            </p> 
+        </div> 
+        <div id="Step-2" class="content" > 
+            <h3>Step-2</h3> 
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non voluptatem suscipit quidem perferendis, 
+                explicabo eum iure omnis nulla eligendi laudantium qui voluptate incidunt quisquam sequi aperiam possimus maxime
+                mollitia recusandae, dicta delectus autem? Repellat sint, dolores excepturi deleniti totam sapiente quae sunt. Dicta 
+                nihil expedita dolorum, eum reiciendis labore rerum. Necessitatibus ipsa impedit, ex voluptas cum nostrum quibusdam 
+                doloribus unde debitis eius animi aliquid voluptatum ea corporis fugiat. Excepturi minima accusamus nemo temporibus 
+                laboriosam repudiandae.</p> 
+        </div> 
+        <div id="Step-3" class="content"> 
+            <h3>Step-3</h3> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nisi repudiandae et eum. Non porro ipsam ducimus
+                ipsa, culpa earum facilis accusamus tempore, voluptas aperiam deleniti, distinctio quidem. Dolore, rem? Dolore ut
+                maiores quidem maxime facilis officiis nisi. Ipsum dicta mollitia architecto iste sed, autem eum voluptas quidem 
+                error sit rerum ipsa, culpa quod suscipit laudantium est ea beatae, perferendis esse quam. Earum officia tempore
+                cupiditate ipsum placeat repudiandae, deserunt nisi atque illum suscipit minus praesentium voluptas asperiores.</p>
+        </div>  
+    
+</div>      
+</div>    
+</body>
+<script>
+    function displaycontent1(){
+         // document.getElementById("Step-1").innerHTML="hello world"
+        let step1 = document.getElementById("Step-1")
+        let step2 = document.getElementById("Step-2")
+        let step3 = document.getElementById("Step-3")
+        let tab1 = document.getElementById("tab1")
+        let tab2 = document.getElementById("tab2")
+        let tab3 = document.getElementById("tab3")
+        tab1.style.backgroundColor="#f29999"
+        tab2.style.backgroundColor="rgb(151, 151, 235)"
+        tab3.style.backgroundColor="rgb(151, 151, 235)"
+
+        step2.style.display="none"
+        step3.style.display="none"
+        step1.style.background=" #eda3a3"
+        if(step1.style.display==="none"){
+            step1.style.display="block"
+        }else{
+            step1.style.display==="none"
+        }
+    }
+    function displaycontent2(){
+        let step1 = document.getElementById("Step-1")
+        let step2 = document.getElementById("Step-2")
+        let step3 = document.getElementById("Step-3")
+        let tab1 = document.getElementById("tab1")
+        let tab2 = document.getElementById("tab2")
+        let tab3 = document.getElementById("tab3")
+        tab1.style.backgroundColor="rgb(151, 151, 235)"
+        tab2.style.backgroundColor="#f29999"
+        tab3.style.backgroundColor="rgb(151, 151, 235)"
+
+        step1.style.display="none"
+        step3.style.display="none"
+        step2.style.background=" #eda3a3"
+        if(step2.style.display==="none"){
+            step2.style.display="block"
+        }else{
+            step2.style.display==="none"
+        }
+    }
+    function displaycontent3(){
+        let step1 = document.getElementById("Step-1")
+        let step2 = document.getElementById("Step-2")
+        let step3 = document.getElementById("Step-3")
+        let tab1 = document.getElementById("tab1")
+        let tab2 = document.getElementById("tab2")
+        let tab3 = document.getElementById("tab3")
+        tab1.style.backgroundColor="rgb(151, 151, 235)"
+        tab2.style.backgroundColor="rgb(151, 151, 235)"
+        tab3.style.backgroundColor="#f29999"
+
+        step1.style.display="none"
+        step2.style.display="none"
+        step3.style.background=" #eda3a3"
+        if(step3.style.display==="none"){
+            step3.style.display="block"
+        }else{
+            step3.style.display==="none"
+        }
+    }
+</script>
+</html>
